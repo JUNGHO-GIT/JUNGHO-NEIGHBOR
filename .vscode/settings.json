@@ -1,0 +1,7 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+  "editor.autoClosingQuotes": "never",
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "editor.autoIndent": "keep"
+}
