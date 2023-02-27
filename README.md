@@ -1,1 +1,1 @@
-# JUNGHO's Spring Charity Homepage Project
+# JUNGHO's Charity Homepage Project

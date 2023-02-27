@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 
 	<!-- modelVersion -->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.good</groupId>
 	<artifactId>neighbor</artifactId>
-	<name>goodneighbor</name>
+	<name>com.good.neighbor</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 
@@ -55,20 +55,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/m
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>${org.slf4j-version}</version>
-		</dependency>
-
-		<!-- tiles -->
-		<dependency>
-			<groupId>org.apache.tiles</groupId>
-			<artifactId>tiles-jsp</artifactId>
-			<version>2.2.2</version>
-		</dependency>
-
-		<!-- tiles-core -->
-		<dependency>
-			<groupId>org.apache.tiles</groupId>
-			<artifactId>tiles-core</artifactId>
-			<version>2.2.2</version>
 		</dependency>
 
 		<!-- slf4j -->
@@ -168,13 +154,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/m
 			<version>1.4.7</version>
 		</dependency>
 
-		<!-- spring-tx -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context-support</artifactId>
-			<version>3.1.1.RELEASE</version>
-		</dependency>
-
 		<!-- file upload -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
@@ -200,21 +179,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/m
 	<!-- dependencyManagement -->
 	<dependencyManagement>
 		<dependencies>
-
-			<!-- spring -->
-			<dependency>
-				<groupId>commons-io</groupId>
-				<artifactId>commons-io</artifactId>
-				<version>2.11.0</version>
-			</dependency>
-
-			<!-- maven war plugin -->
-			<dependency>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.3.2</version>
-			</dependency>
-
 			<!-- spring core -->
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -231,17 +195,33 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/m
 
 			<!-- spring context -->
 			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+				<version>4.0.5.RELEASE</version>
+			</dependency>
+
+			<!-- spring -->
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.11.0</version>
+			</dependency>
+
+			<!-- maven war plugin -->
+			<dependency>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.2</version>
+			</dependency>
+
+			<!-- spring context -->
+			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
 				<version>1.2.17</version>
 			</dependency>
 
-			<!-- spring context -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context-support</artifactId>
-				<version>3.1.1.RELEASE</version>
-			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
@@ -302,5 +282,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/m
 
 		<!-- file name -->
 		<finalName>${project.name}</finalName>
+
 	</build>
 </project>

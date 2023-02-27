@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- MYSQL 사용 -->
+
+<mapper namespace="mybatisMapper">
+
+  <!-- 모든 상품 -->
+  <select id="mybatisList" resultType="productDTO">
+    SELECT * FROM shop_product
+  </select>
+
+</mapper>
